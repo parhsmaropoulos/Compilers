@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "makefile": "makefile",
+        "list": "cpp",
+        "algorithm": "cpp",
+        "stack": "cpp",
+        "xstring": "cpp",
+        "vector": "cpp",
+        "deque": "cpp",
+        "iostream": "cpp"
+    }
+}

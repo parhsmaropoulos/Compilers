@@ -1,0 +1,21 @@
+=========BNF=========
+
+<expr> ::= <name>"="<equal>";"
+<equal> ::= <term>|<term><symbol><equal>
+<term> ::= <name>|<const>
+<const> ::= <digit>|<digit><const>
+<name> ::= <variable>|<variable><name>
+<digit> ::= "0"|"1"|"2"|"3"|"4"|"5"|"6"|"7"|"8"|"9"
+<variable> ::= "a"|"b"|.....|"z"|"A"|"B"|....|"Z"
+<symbol> ::= "+"|"-"|"/"|"%"|"*"
+
+=========EBNF=========
+
+expr = name,"=",equal,";";
+equal = term, {symbol, equal};
+term = name|digit,const;
+const = digit,{const};
+digit = "0"|"1"|"2"|"3"|"4"|"5"|"6"|"7"|"8"|"9"
+name = variable, {name};
+variable = "a"|"b"|.....|"z"|"A"|"B"|....|"Z"
+symbol = "+"|"-"|"/"|"%"|"*"
